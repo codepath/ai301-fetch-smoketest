@@ -1,0 +1,6 @@
+MARKER: beat-1-sandbox/unit-3/eval-run.txt (maya)
+# eval run written by run_eval.py at 2026-09-12T00:00:00Z
+# model: sonnet (pinned)
+item    gold    verdict  agree
+pkg-01  accept  accept   yes
+agreement: 1/1 scored items
