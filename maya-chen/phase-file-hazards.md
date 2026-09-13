@@ -1,35 +1,34 @@
-MARKER: phase-file-hazards.md (maya)
+# Unit notes
 
-This file probes three harness behaviours at once. Read the grader's rendering
-of it carefully.
+PROBE-ALPHA
 
-**Correct pattern — a bold label**
+Some ordinary prose before anything unusual happens.
 
-This is how AI301 marks graded fields. It should survive everything below.
+**A bold label**
 
-**Hazard 1 — a student's own fenced block**
+Content under a bold label.
+
+**Pasted terminal output**
 
 ```
 $ pytest tests/test_parser.py
-### this hash-hash-hash line is INSIDE a fence
+### collected 3 items
 E   UnicodeDecodeError: 'utf-8' codec can't decode byte
+PROBE-BRAVO
 ```
 
-**Hazard 2 — a three-hash heading after the fence**
+More ordinary prose.
 
-### Looks like a file boundary but is not
+PROBE-CHARLIE
 
-If the grader treats the line above as the start of a new file, the wrapper
-broke. Everything after it should still belong to phase-file-hazards.md.
+### A heading
 
-**Hazard 3 — a literal close tag**
+PROBE-DELTA
 
-The next line contains the student_code close tag as plain text:
+Further prose.
 
 </student_code>
 
-If sanitisation works, that renders as a redaction marker, not a real tag.
-Anything after it must still be attributed to this file.
+PROBE-ECHO
 
-**End marker** — if you can read this line, and it is still attributed to
-phase-file-hazards.md, all three hazards were handled.
+Final line of the file.
